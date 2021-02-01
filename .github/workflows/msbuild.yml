@@ -35,7 +35,7 @@ jobs:
       shell: bash
       run: |
         set -xe
-        PKG_PATH=$(ls ${{ github.workspace }}/**/ExplorerTool.exe)
+        PKG_PATH=${{ github.workspace }}\x64\Release\ExplorerTool.exe
         PKG_NAME=$(basename "$PKG_PATH")
         echo "PKG_PATH=$PKG_PATH" >> $GITHUB_ENV
         echo "PKG_NAME=$PKG_NAME" >> $GITHUB_ENV
