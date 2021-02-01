@@ -35,4 +35,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: ExplorerTool
-        path: ${{ github.workspace }}\x64\Release\ExplorerTool.exe
+        path: ${{ github.workspace }}\x64\${{env.BUILD_CONFIGURATION}}\ExplorerTool.exe
